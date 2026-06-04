@@ -1,4 +1,4 @@
-# System Architecture
+
 
 ![Architecture Diagram](ArchitectureDiagram.png)
 
