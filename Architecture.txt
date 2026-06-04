@@ -1,0 +1,102 @@
+﻿# System Architecture
+
+## Project Name
+Customer Engagement & Service Analytics Platform
+
+## Architecture Used
+This project follows a 3-Layer Architecture.
+
+## 1. Presentation Layer
+This layer contains the user interface of the application.
+
+Main folders:
+- Views
+- wwwroot
+
+It includes Razor pages for:
+- Customer Management
+- Ticket Management
+- Login Page
+- Admin Dashboard
+- User Dashboard
+
+## 2. Business Logic Layer
+This layer handles application logic and user requests.
+
+Main folder:
+- Controllers
+
+Controllers used:
+- CustomersController
+- TicketsController
+- AccountController
+- CustomersApiController
+- TicketsApiController
+- AuthApiController
+
+## 3. Data Access Layer
+This layer handles database communication.
+
+Main folders:
+- Models
+- Data
+- Migrations
+
+Main files:
+- Customer.cs
+- Ticket.cs
+- ApplicationDbContext.cs
+
+The application uses Entity Framework Core with SQL Server.
+
+## Database Design
+
+Main entities:
+- Customer
+- Ticket
+
+Relationship:
+- One customer can have multiple tickets.
+- Tickets are used to track customer service issues.
+
+## Security
+
+Authentication:
+- Cookie-based login system
+- JWT token generation for API authentication
+
+Authorization:
+- Admin role
+- User role
+- Role-based access control
+
+Admin can access:
+- Admin Dashboard
+- Customer Management
+- Ticket Management
+
+User can access:
+- User Dashboard
+- Ticket viewing
+
+## API Layer
+
+REST APIs are created for:
+- Customers
+- Tickets
+- JWT Login
+
+Swagger is used to test and document APIs.
+
+## DevOps and Deployment Concept
+
+The project is maintained using GitHub for version control.
+
+Future deployment can be done using:
+- Docker
+- GitHub Actions
+- Azure App Service
+
+## Summary
+
+This architecture separates UI, business logic, and database access into different layers. This makes the application easier to maintain, test, and extend in the future.
