@@ -1,0 +1,16 @@
+﻿Copilot Prompts Used
+
+1. Generate ASP.NET Core MVC Customer model with validation attributes.
+2. Generate Ticket model for service ticket management.
+3. Create Entity Framework Core DbContext for Customers and Tickets.
+4. Create MVC controller for customer CRUD operations.
+5. Create MVC controller for ticket CRUD operations.
+6. Create Razor views for customer create, edit, delete, and list pages.
+7. Create Razor views for ticket create, edit, delete, and list pages.
+8. Implement cookie-based login authentication in ASP.NET Core MVC.
+9. Implement role-based authorization for Admin and User roles.
+10. Create REST API controllers for Customer and Ticket entities.
+11. Add Swagger support for API testing.
+12. Generate JWT token authentication endpoint.
+13. Create Dockerfile for ASP.NET Core application deployment.
+14. Create GitHub Actions YAML workflow for build automation.
