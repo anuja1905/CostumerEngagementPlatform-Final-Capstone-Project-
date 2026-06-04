@@ -1,5 +1,9 @@
 # System Architecture
 
+![Architecture Diagram](ArchitectureDiagram.png)
+
+# System Architecture
+
 ## Project Name
 
 Customer Engagement & Service Analytics Platform
