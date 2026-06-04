@@ -1,0 +1,37 @@
+﻿@model CustomerEngagementPlatform.Models.Ticket
+
+@{
+    ViewData["Title"] = "Edit Ticket";
+}
+
+<h2>Edit Ticket</h2>
+
+<form asp-action="Edit" method="post">
+
+    <input type="hidden" asp-for="TicketId" />
+
+    <div class="mb-3">
+        <label>Subject</label>
+        <input asp-for="Subject" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Description</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label>Priority</label>
+        <input asp-for="Priority" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Status</label>
+        <input asp-for="Status" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Update Ticket
+    </button>
+
+</form>

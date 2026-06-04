@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "User Dashboard";
+}
+
+<h2>User Dashboard</h2>
+
+<div class="alert alert-info">
+    Welcome, User! You have access to the User Dashboard.
+</div>
+
+<p>
+    <a asp-controller="Tickets" asp-action="Index" class="btn btn-secondary">
+        View Tickets
+    </a>
+
+    <a asp-action="Logout" class="btn btn-danger">
+        Logout
+    </a>
+</p>

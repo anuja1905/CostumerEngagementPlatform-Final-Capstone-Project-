@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CustomerEngagementPlatform.Models.Ticket>
+
+@{
+    ViewData["Title"] = "Tickets";
+}
+
+<h2>Ticket List</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        Create New Ticket
+    </a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Ticket Id</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Priority</th>
+            <th>Created Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.TicketId</td>
+                <td>@item.Subject</td>
+                <td>@item.Status</td>
+                <td>@item.Priority</td>
+                <td>@item.CreatedDate</td>
+                <td>
+                    <a asp-action="Edit"
+                           asp-route-id="@item.TicketId"
+                           class="btn btn-warning">
+                        Edit
+                    </a>
+
+                    <a asp-action="Delete"
+                           asp-route-id="@item.TicketId"
+                           class="btn btn-danger">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

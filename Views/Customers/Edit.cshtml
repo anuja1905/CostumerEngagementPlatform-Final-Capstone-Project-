@@ -1,0 +1,37 @@
+﻿@model CustomerEngagementPlatform.Models.Customer
+
+@{
+    ViewData["Title"] = "Edit Customer";
+}
+
+<h2>Edit Customer</h2>
+
+<form asp-action="Edit" method="post">
+
+    <input type="hidden" asp-for="CustomerId" />
+
+    <div class="mb-3">
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Phone</label>
+        <input asp-for="Phone" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Address</label>
+        <input asp-for="Address" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Update Customer
+    </button>
+
+</form>
