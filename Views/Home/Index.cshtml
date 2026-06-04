@@ -1,8 +1,90 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="p-5 mb-4 bg-light rounded-3 shadow-sm">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">
+            Customer Engagement & Service Analytics
+        </h1>
+
+        <p class="col-md-8 fs-4">
+            A smart platform to manage customers, track service tickets, monitor issue status,
+            and improve customer support efficiency.
+        </p>
+
+        <a asp-controller="Account" asp-action="Login" class="btn btn-primary btn-lg">
+            Get Started
+        </a>
+    </div>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-md-4">
+        <div class="card shadow-lg border-0 p-4 mb-4">
+            <h3>👥 Customers</h3>
+            <p>Store and manage customer details with easy CRUD operations.</p>
+            <a asp-controller="Customers" asp-action="Index" class="btn btn-outline-primary">
+                Manage Customers
+            </a>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-lg border-0 p-4 mb-4">
+            <h3>🎫 Tickets</h3>
+            <p>Create, update, and track customer service tickets in real time.</p>
+            <a asp-controller="Tickets" asp-action="Index" class="btn btn-outline-success">
+                Manage Tickets
+            </a>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-lg border-0 p-4 mb-4">
+            <h3>🔐 Secure Access</h3>
+            <p>Role-based login system for Admin and User authorization.</p>
+            <a asp-controller="Account" asp-action="Login" class="btn btn-outline-dark">
+                Login
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div class="mt-5 text-center">
+    <h3>Project Highlights</h3>
+
+    <div class="row mt-4">
+
+        <div class="col-md-3">
+            <div class="border rounded p-3 shadow-sm">
+                <h4>MVC</h4>
+                <p>ASP.NET Core MVC</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="border rounded p-3 shadow-sm">
+                <h4>EF Core</h4>
+                <p>Database Integration</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="border rounded p-3 shadow-sm">
+                <h4>JWT</h4>
+                <p>Token Authentication</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="border rounded p-3 shadow-sm">
+                <h4>Swagger</h4>
+                <p>API Testing</p>
+            </div>
+        </div>
+
+    </div>
 </div>
