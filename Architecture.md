@@ -1,6 +1,6 @@
 
 
-![Architecture Diagram](ArchitectureDiagram.png)
+![Architecture Diagram](Customer%20engagement%20architecture.png)
 
 # System Architecture
 
