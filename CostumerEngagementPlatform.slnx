@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../CustomerEngagementPlatform/CustomerEngagementPlatform.csproj" Id="0b78d445-e5b7-4791-ad08-f3fdb0c1501f" />
   <Project Path="CostumerEngagementPlatform.csproj" />
 </Solution>
